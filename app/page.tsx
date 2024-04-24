@@ -26,7 +26,7 @@ export default function Home() {
     },
   ];
   return (
-    <main className="w-screen h-screen relative">
+    <main className="w-screen h-screen sm:h-[100vh] relative">
       <div
         className="flex items-center w-full h-full bg-cover bg-center"
         style={{ backgroundImage: "url(/main-bg.webp)" }}
@@ -89,7 +89,7 @@ export default function Home() {
         </Link>
         <Link
           href="/resume"
-          className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
+          className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 mb-11 text-lg text-white max-w-[200px]"
         >
           Resume
         </Link>
