@@ -1,6 +1,9 @@
+/* eslint-disable react/jsx-key */
 import { Socials } from "@/constants";
 import Image from "next/image";
 import React from "react";
+import { GlobeDemo } from "./GlobeDemo";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -15,24 +18,27 @@ const Navbar = () => {
             className="w-full h-full object-contain rounded-full"
           /> */}
         </div>
-        <h1 className="text-white text-[25px] font-semibold">
-          Webchain{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
+        <h1 className=" gradient-title text-white text-[25px] font-semibold">
+          {" "}
+          <span className="gradientP text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
             {" "}
-            Dev{" "}
+            {/* <GlobeDemo /> */}
           </span>
         </h1>
       </div>
 
       <div className="flex flex-row gap-5 mb-2">
         {Socials.map((social) => (
-          <Image
-            key={social.name}
-            src={social.src}
-            alt={social.name}
-            width={28}
-            height={28}
-          />
+          <Link href={`${social.link}`}>
+            {" "}
+            <Image
+              key={social.name}
+              src={social.src}
+              alt={social.name}
+              width={28}
+              height={28}
+            />
+          </Link>
         ))}
       </div>
     </div>

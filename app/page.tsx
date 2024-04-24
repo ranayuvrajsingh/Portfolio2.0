@@ -1,9 +1,30 @@
-"use client"
+/* eslint-disable react/no-unescaped-entities */
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
+import { TypewriterEffectSmooth } from "../components/ui/typewriter-effect";
 
 export default function Home() {
+  const intro = [
+    {
+      text: "I",
+    },
+    {
+      text: "am Rana Yuvraj ",
+    },
+  ];
+  const work = [
+    {
+      text: "Full ",
+    },
+    {
+      text: "Stack",
+    },
+    {
+      text: "Developer",
+    },
+  ];
   return (
     <main className="w-screen h-screen relative">
       <div
@@ -12,22 +33,27 @@ export default function Home() {
       >
         <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
           <h1 className="text-[50px] text-white font-semibold">
-            Make anything possible with
+            Hi{" "}
+            <span className="wave" role="img" aria-labelledby="wave">
+              👋🏻
+            </span>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
               {" "}
-              Web Development
+              <TypewriterEffectSmooth words={intro} />
+              <TypewriterEffectSmooth words={work} />
             </span>
           </h1>
           <p className="text-gray-200 hidden md:block">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Seasoned MERN Stack Developer. Expert in MongoDB, Express.js,
+            React.js, Node.js, HTML, CSS, Bootstrap, and JavaScript. Let's build
+            something incredible together!
           </p>
           <div className="flex-col md:flex-row hidden md:flex gap-5">
             <Link
               href="/my-skills"
-              className="rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
+              className="rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white text-1xl font-semibold  max-w-[200px]"
             >
-              Learn more
+              About Skills
             </Link>
             <Link
               href="/my-projects"
@@ -37,11 +63,11 @@ export default function Home() {
               My projects
             </Link>
             <Link
-              href="/contact-me"
+              href="/resume"
               className="rounded-[20px] group relative bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
             >
               <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hver:opacity-20" />
-              Contact me
+              Resume
             </Link>
           </div>
         </div>
@@ -52,7 +78,7 @@ export default function Home() {
           href="/my-skills"
           className="rounded-[20px] group bg-blue-500 px-5 py-3 text-lg text-white max-w-[200px]"
         >
-          Learn more
+          About Skills
         </Link>
 
         <Link
@@ -62,10 +88,10 @@ export default function Home() {
           My projects
         </Link>
         <Link
-          href="/contact-me"
+          href="/resume"
           className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
         >
-          Contact me
+          Resume
         </Link>
       </div>
 

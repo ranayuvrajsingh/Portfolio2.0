@@ -62,6 +62,7 @@ export const SkillData = [
     width: 80,
     height: 80,
   },
+
   {
     name: "Node js",
     Image: "/node-js.png",
@@ -78,16 +79,19 @@ export const SkillData = [
 
 export const Socials = [
   {
-    name: "Discord",
-    src: "/instagram.svg",
+    name: "Linkedin",
+    src: "/linkedin.svg",
+    link: "https://www.linkedin.com/in/ranayuvrajsingh/",
   },
   {
-    name: "Facebook",
-    src: "/facebook.svg",
+    name: "Github",
+    src: "/github.svg",
+    link: "https://github.com/ranayuvrajsingh",
   },
   {
-    name: "Instagram",
-    src: "/discord.svg",
+    name: "X",
+    src: "/whatsapp.gif",
+    link: "https://wa.me/8445847591",
   },
 ];
 export const Projects = [
@@ -120,18 +124,19 @@ export const NavLinks = [
     link: "/",
   },
   {
-    name: "/my-skills",
-    icon: RxPerson,
-    link: "/my-skills",
-  },
-  {
     name: "/my-projects",
     icon: RxDashboard,
     link: "/my-projects",
   },
   {
-    name: "/contact-me",
+    name: "/my-skills",
+    icon: RxPerson,
+    link: "/my-skills",
+  },
+
+  {
+    name: "/resume",
     icon: RxClipboard,
-    link: "/contact-me",
+    link: "/resume",
   },
 ];

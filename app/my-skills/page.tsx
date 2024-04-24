@@ -54,7 +54,7 @@ const Page = () => {
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
-            reverseDirection: true
+            reverseDirection: true,
           }}
           speed={5000}
           modules={[Autoplay]}
