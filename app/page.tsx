@@ -89,7 +89,7 @@ export default function Home() {
         </Link>
         <Link
           href="/resume"
-          className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 mb-11 text-lg text-white max-w-[200px]"
+          className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 mb-20 text-lg text-white max-w-[200px]"
         >
           Resume
         </Link>

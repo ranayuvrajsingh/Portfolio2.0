@@ -7,8 +7,14 @@ import { WavyBackground } from "@/components/ui/wavy-background";
 const Work = () => {
   return (
     <>
-      <WavyBackground style={{ overflow: "auto" }}>
-        <h1 className="gradient-title glass-header z-10 fixed top-0 w-[98%] shadow-md text-3xl md:text-4xl lg:text-5xl font-bold text-center py-4">
+      <WavyBackground
+        style={{
+          overflow: "auto",
+          width: "600px",
+          margin: "1px",
+        }}
+      >
+        <h1 className="gradient-title glass-header z-10 fixed top-0 w-[100%] shadow-md text-3xl md:text-4xl lg:text-5xl font-bold text-center py-4">
           Projects
         </h1>
         <div className={styles.imgContainer}>
