@@ -40,7 +40,17 @@ export function AuroraBackgroundDemo() {
               <h1 className="gradient-title glass-header z-10  top-0 w-[98%] shadow-md text-3xl md:text-4xl lg:text-5xl font-bold text-center py-4">
                 Github Contribution
               </h1>
-              <GitHubCalendar username={"ranayuvrajsingh"} />
+              <GitHubCalendar
+                username={"ranayuvrajsingh"}
+                style={{
+                  margin: "0 auto",
+                  maxWidth: "100%",
+                  padding: "0 10px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              />
             </div>
           </div>
         </div>
